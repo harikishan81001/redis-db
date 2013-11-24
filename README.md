@@ -8,11 +8,11 @@ No-Sql in retrieval of model objects.
 
   Dependencies:
     
-    django >=1.3
+    django >=1.3    [Django](https://www.djangoproject.com/)
     
-    redis-py
+    redis-py        [Redis-Py](https://github.com/andymccurdy/redis-py)
     
-    redis-server
+    redis-server    [Redis](http://redis.io/)
     
 
   User Manual :
