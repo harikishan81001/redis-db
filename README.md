@@ -6,13 +6,13 @@ per requirements it can be fetched using filters.
 
 No-Sql in retrieval of model objects.
 
-  Dependencies:
+Dependencies:
     
-    django >=1.3    [Django](https://www.djangoproject.com/)
-    
-    redis-py        [Redis-Py](https://github.com/andymccurdy/redis-py)
-    
-    redis-server    [Redis](http://redis.io/)
+[django >=1.3](https://www.djangoproject.com/)
+
+[redis-py](https://github.com/andymccurdy/redis-py)
+
+[redis](http://redis.io/)
     
 
   User Manual :
