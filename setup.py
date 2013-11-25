@@ -2,7 +2,7 @@ from distutils.core import setup
 
 setup(
     name='Redis-DB',
-    version='0.1.4',
+    version='0.1.5',
     author='Hari Kishan',
     author_email='hari.kishan81001@gmail.com',
     packages=['redis_db'],
