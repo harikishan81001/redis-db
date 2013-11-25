@@ -38,10 +38,10 @@ def cache_invalidator(*args, **kwargs):
             raise InvalidObj(
                 'type %s signal is not supported ' % signal)
     except KeyError as e:
-        raise e('callback does not have sender,'\
+        raise e('callback does not have sender,'
             'signal is not configured properly')
     except AttributeError as e:
-        raise e('model is not configured properly'\
+        raise e('model is not configured properly'
         'cache_objects attribute missing')
     
 def serialize_obj(instance):
