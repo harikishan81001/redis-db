@@ -26,11 +26,11 @@ def cache_invalidator(*args, **kwargs):
         else:
             raise InvalidObj(
                 'object is not instance of %s' % model.__class__)
-        manager = getattr(model, 'cache_objects'):
+        manager = getattr(model, 'cache_objects')
         if signal == post_save or signal == pre_save:
             if kwargs['created']:
                 manager.add_single(obj_dict['id'], obj_dict)
-           else:
+            else:
                manager.modify_obj(obj_dict['id'], obj_dict)     
         elif signal == pre_delete or signal== post_delete:
             manager.delete(obj_dict['id'])
@@ -48,6 +48,6 @@ def serialize_obj(instance):
     j_list = serializers.serialize('json', [instance])
     j = json.loads(j_list)
     resp = j[0]['fields']
-    resp.update({'id': j[0]['pk']}
+    resp.update({'id': j[0]['pk']})
     return resp
 
